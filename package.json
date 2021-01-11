@@ -11,9 +11,11 @@
   "tracer": "^1.1.4"
  },
  "scripts": {
+  "tsc": "tsc",
   "start": "yarn compile && node dist/index.js",
   "compile": "tsc",
-  "postinstall": "yarn compile"
+  "postinstall": "yarn compile",
+  "postinstall": "npm run tsc"
  },
  "devDependencies": {
   "@types/express": "^4.17.8",
